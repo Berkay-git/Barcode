@@ -1,8 +1,14 @@
+// src/api/api.ts
 import axios from "axios";
+import { Platform } from "react-native";
 
-// ANDROID emülatör için bilgisayarın localhost'u 10.0.2.2
+const baseURL =
+  Platform.OS === "android"
+    ? "http://10.0.2.2:5000"
+    : "http://127.0.0.1:5000";
+
 const api = axios.create({
-  baseURL: "http://10.0.2.2:5000",
+  baseURL,
   timeout: 5000,
 });
 

@@ -47,6 +47,7 @@ export default function ScanTab() {
     <View style={{ flex: 1 }}>
       {!scanned ? (
         <CameraView
+          key={scanned ? "off" : "on"}
           style={{ flex: 1 }}
           barcodeScannerSettings={{ barcodeTypes: ["ean13", "ean8", "qr", "code128"] }}
           onBarcodeScanned={onBarcodeScanned}

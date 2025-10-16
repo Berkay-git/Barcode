@@ -4,6 +4,7 @@ import { HapticTab } from '@/components/haptic-tab';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
+import { Image } from "react-native";
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -27,7 +28,17 @@ export default function TabLayout() {
         name="explore"
         options={{
           title: 'Barkod Tara',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="barcode.viewfinder" color={color} />,
+          tabBarIcon: ({ focused }) => (
+            <Image
+              source={require("../../assets/images/scan-icon.png")}
+              style={{
+                width: 28,
+                height: 28,
+                marginBottom: -4,
+                resizeMode: "contain",
+              }}
+            />
+          ),
         }}
       />
     </Tabs>
