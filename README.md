@@ -32,6 +32,8 @@ React Navigation – Tab-based UI
 React Native SVG / Icons – Custom visuals and icons
 
 🧱 Project Structure
+
+
 <img width="608" height="476" alt="image" src="https://github.com/user-attachments/assets/d6eb75ed-1666-4fb4-a198-69e42e540854" />
 
 
