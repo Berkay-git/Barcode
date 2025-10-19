@@ -32,23 +32,8 @@ React Navigation – Tab-based UI
 React Native SVG / Icons – Custom visuals and icons
 
 🧱 Project Structure
-C:.
-├── barcode_app/            # React Native (Expo) frontend
-│   ├── app/
-│   │   ├── (tabs)/         # Tab-based navigation
-│   │   │   ├── index.tsx   # Product listing
-│   │   │   ├── explore.tsx # Barcode scanning
-│   │   │   └── _layout.tsx # Tab layout
-│   │   └── _layout.tsx     # Root layout
-│   ├── assert/images/      # Icons, SVGs, and assets
-│   └── src/api/api.ts      # Axios connection
-│
-└── flaskapi/               # Backend (Flask)
-    ├── app.py              # Flask entry point
-    ├── db_config.py        # Database connection
-    ├── models/             # SQLAlchemy models
-    ├── routes/             # Flask routes (API endpoints)
-    └── migrations/         # Auto-generated migrations
+<img width="608" height="476" alt="image" src="https://github.com/user-attachments/assets/d6eb75ed-1666-4fb4-a198-69e42e540854" />
+
 
 ⚙️ Features
 
@@ -67,7 +52,6 @@ cd barcode
 
 2️⃣ Backend Setup (Flask)
 cd flaskapi
-pip install -r requirements.txt
 flask db upgrade
 python app.py
 
